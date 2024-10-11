@@ -1,11 +1,10 @@
 function makeArray(firstArray, secondArray, maxLength) {
     const message = firstArray.concat(secondArray);
     if (message.length <= maxLength) {
-        return `[${message}]`
+        return message
     } else {
-        return `[${message.slice(0, maxLength)}]`
+        return message.slice(0, maxLength)
     }
-
 }
 
 
